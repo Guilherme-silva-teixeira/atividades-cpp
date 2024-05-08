@@ -10,9 +10,32 @@ class origin
 {
 };
 
+void test02()
+{
+	//teste do while 02
+	int number = 0;
+		while (number < 1000)
+		{
+			number++;
+			std::cout << number << std::endl;
+		}
+}
+
 int main()
 {
-	std::cout << "is working" << std::endl;
+	int number = 0;
+	//teste do while 01
+	while (number < 1000)
+	{
+		std::cout << number << std::endl;
+		number++;
+		if (number == 500)
+		{
+			break;
+		}
+	}
+	//teste do while 02
+	test02();
 	return 0;
 }
 
