@@ -10,6 +10,17 @@ class origin
 {
 };
 
+void testeDoWhile()
+{
+	int number = 0;
+	//executa primeiro
+	do
+	{
+		std::cout << number << std::endl;
+		number++;
+	} while (number < 1000);
+}
+
 void test02()
 {
 	//teste do while 02
@@ -36,7 +47,10 @@ int main()
 	}
 	//teste do while 02
 	test02();
+	//teste do laço do-while
+	testeDoWhile();
 	return 0;
+	
 }
 
 // Executar programa: Ctrl + F5 ou Menu Depurar > Iniciar Sem Depuração
