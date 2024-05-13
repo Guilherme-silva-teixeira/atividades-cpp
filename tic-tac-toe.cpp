@@ -14,8 +14,14 @@ void PRINTBOARD(char arr[2][2])
 	std::cout << '|' << ' ' << arr[2][0] << '|' << ' ' << arr[2][1] << '|' << ' ' << arr[2][2] << '|' << std::endl;
 }
 
-bool verifyWinner(char player1, char player2)
+string verifyWinner(char arr[2][2])
 {
+	if ((arr[0][0] == 'X' && arr[0][1] == 'X' && arr[0][2] == 'X') ||
+		(arr[1][0] == 'X' && arr[1][1] == 'X' && arr[1][2] == 'X') ||
+		(arr[2][0] == 'X' && arr[2][1] == 'X' && arr[2][2] == 'X'))
+	{
+
+	}
 }
 
 int main(int null)
@@ -46,7 +52,7 @@ int main(int null)
 
 			atualplayer = playerX;
 		}
-		if (verifyWinner() == true)
+		if (verifyWinner(arr))
 		{
 
 		}
