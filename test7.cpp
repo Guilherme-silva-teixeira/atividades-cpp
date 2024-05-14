@@ -1,4 +1,7 @@
-//Fibonacci e fatorial
+////////////////////////////////////////////////////////////////
+//Fibonacci e fatorial                                        //
+//file7.cpp                                                   //
+////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <locale>
 
@@ -17,7 +20,9 @@ int main(int null)
 	std::cout << "Fibonacci com " << val << " valores: " << std::endl;
 	for (int i = 0; i < val; i++)
 	{
+		std::cout << Fibonacci(i + 1) << " " << std::endl;
 	}
+	std::cout << "\n\n" << std::endl;
 	return null;
 }
 
@@ -37,4 +42,16 @@ int fatorial(int n)
 		return 1;
 	}
 	return (n * fatorial(n - 1));
+}
+
+int Fibonacci(int n)
+{
+	if ((n == 1) || (n == 2))
+	{
+		return 1;
+	}
+	else
+	{
+		return Fibonacci(n - 1) + Fibonacci(n - 2);
+	}
 }
