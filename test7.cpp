@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////
-//Fibonacci e fatorial                                        //
-//file7.cpp                                                   //
+//               Fibonacci e fatorial                         //
+//                     file7.cpp                              //
 ////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <locale>
