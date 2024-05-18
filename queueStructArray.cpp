@@ -27,10 +27,32 @@ int main(int null)
 		switch (op)
 		{
 			case 1:
+				system("cls");
 				std::cout << "Digite o nome do produto: " << std::endl;
 				std::cin >> nome;
+				std::cout << "\n\n\n\n\n\n\n###                        5% Concluido;" << std::endl;
+				system("pause");
+				system("cls");
 				std::cout << "Digite o id do produto:" << std::endl;
 				std::cin >> id;
+				std::cout << "\n\n\n\n\n\n\n######                    25% Concluido;" << std::endl;
+				system("pause");
+				system("cls");
+				std::cout << "Digite o preço do produto: " << std::endl;
+				std::cin >> preco;
+				std::cout << "\n\n\n\n\n\n\n#########                 50% Concluido;" << std::endl;
+				system("pause");
+				system("cls");
+				std::cout << "Digite o tipo do produto: " << std::endl;
+				std::cin >> tipo;
+				std::cout << "\n\n\n\n\n\n\n############              75% Concluido;" << std::endl;
+				system("pause");
+				system("cls");
+				std::cout << "Digite o estoque do produto: " << std::endl;
+				std::cin >> stq;
+				std::cout << "\n\n\n\n\n\n\n###############          100% Concluido;" << std::endl;
+				system("pause");
+				system("cls");
 			break;
 		}
 	} while (!(strcmpq(blocker, sair) == "true" || blocker == "SAIR"));
