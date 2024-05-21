@@ -15,6 +15,8 @@ int main(int null)
 	{
 		aula.push_front(i);
 	}
+	aula.sort();
+	//
 	it = aula.begin();
 	advance(it, 5);
 	aula.insert(it, 0);
