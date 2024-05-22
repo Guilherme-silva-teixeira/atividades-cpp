@@ -8,11 +8,16 @@ using namespace std;
 int main(int null)
 {
 	setlocale(LC_ALL, "portuguese");
-	list <int> aula;
+	list <int> aula,teste;
 	int tam;
 	list <int>::iterator it;
-	tam = 10;
 
+	teste.push_front(9);
+	teste.push_front(9);
+	teste.push_front(9);
+	teste.push_front(9);
+
+	tam = 10;
 	for (int i = 0; i < tam; i++)
 	{
 		aula.push_front(i);
@@ -22,6 +27,7 @@ int main(int null)
 	advance(it, 3);
 	aula.insert(it, 0);
 	aula.erase(--it);
+	aula.merge(teste);
 
 	std::cout << "Tamanho da lista: " << aula.size() << "\n\n" << std::endl;
 
