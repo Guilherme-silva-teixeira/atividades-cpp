@@ -48,18 +48,5 @@ struct carro
 int main(int null)//remover null se apresentar erro;
 {
 	setlocale(LC_ALL, "portuguese");
-	carro car1;
-	carro car2;
-
-	car1.nome = "Tornado";
-	car1.cor = "Vermelho";
-	car1.pot = 450;
-	car1.velMax = 350;
-
-	car2.nome = "Luxo";
-	car2.cor = "Preto";
-	car2.pot = 250;
-	car2.velMax = 260;
-
 	return null;
 }
