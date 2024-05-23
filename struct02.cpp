@@ -26,11 +26,6 @@ struct carro
 		std::cout << "Cor----------------------:" << cor << "\n\n" << std::endl;
 		std::cout << "Potência-----------------:" << pot << "\n\n" << std::endl;
 		std::cout << "Velocidade Maxima--------:" << velMax << "\n\n" << std::endl;
-
-		std::cout << "Nome---------------------:" << nome << "\n\n" << std::endl;
-		std::cout << "Cor----------------------:" << cor << "\n\n" << std::endl;
-		std::cout << "Potência-----------------:" << pot << "\n\n" << std::endl;
-		std::cout << "Velocidade Maxima--------:" << velMax << "\n\n" << std::endl;
 	}
 
 	void alterarVelocidade(int mv)
@@ -51,5 +46,6 @@ int main(int null)//remover null se apresentar erro;
 	car1.mostra();
 	car1.alterarVelocidade(400);//se a velocidade for maior ele vai substituir para a ultima várialvel adicionada
 	car1.mostra();
+	
 	return null;
 }
