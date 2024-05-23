@@ -5,12 +5,11 @@ using namespace std;
 
 struct carro
 {
-//adicionar função a struct
-//utiliza-se setlocale nas funções que imprimem algo
 	string nome;
 	string cor;
 	int pot;
 	int velMax;
+	int vel;
 
 	void insere(string strnome, string strcor, int strpot, int strvelMax)
 	{
@@ -20,6 +19,8 @@ struct carro
 		velMax = strvelMax;
 	}
 
+//função dentro de struct
+//se a função imprimir algo, usa-se o setlocale
 	void mostra()
 	{
 		setlocale(LC_ALL, "portuguese");
@@ -32,6 +33,15 @@ struct carro
 		std::cout << "Cor----------------------:" << cor << "\n\n" << std::endl;
 		std::cout << "Potência-----------------:" << pot << "\n\n" << std::endl;
 		std::cout << "Velocidade Maxima--------:" << velMax << "\n\n" << std::endl;
+	}
+
+	void alterarVelocidade(int mv)
+	{
+		vel = mv;
+		if (vel > velMax)
+		{
+			vel = velMax;
+		}
 	}
 };
 
