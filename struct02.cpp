@@ -19,8 +19,6 @@ struct carro
 		velMax = strvelMax;
 	}
 
-//função dentro de struct
-//se a função imprimir algo, usa-se o setlocale
 	void mostra()
 	{
 		setlocale(LC_ALL, "portuguese");
@@ -48,7 +46,10 @@ struct carro
 int main(int null)//remover null se apresentar erro;
 {
 	setlocale(LC_ALL, "portuguese");
-	carro car1,car2,car3,car4;
-	car1.insere(
+	carro car1, car2, car3, car4;
+	car1.insere("Tornado", "Vermelho", 450, 360);
+	car1.mostra();
+	car1.alterarVelocidade(400);//se a velocidade for maior ele vai substituir para a ultima várialvel adicionada
+	car1.mostra();
 	return null;
 }
