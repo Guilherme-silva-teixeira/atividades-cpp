@@ -48,5 +48,7 @@ struct carro
 int main(int null)//remover null se apresentar erro;
 {
 	setlocale(LC_ALL, "portuguese");
+	carro car1,car2,car3,car4;
+	car1.insere(
 	return null;
 }
