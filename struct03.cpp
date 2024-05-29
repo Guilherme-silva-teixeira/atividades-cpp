@@ -1,5 +1,8 @@
 #include <iostream>
 #include <locale>
+#include <string>
+#include <list>
+
 
 using namespace std;
 
