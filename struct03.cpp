@@ -22,8 +22,16 @@ struct Produtos
 	int estq[100];
 };
 
+void op()
+{
+	setlocale(LC_ALL, "portuguese");
+	std::cout << "Digite a opção necessária: \n\n 1 - Cadastrar produto\n\n 2 - mostrar produtos\n\n 3 - Pesquisar e editar o produto" << std::endl;
+	std::cout << "opção: " << std::endl;
+}
+
 int main(int null)
 {
-
+	setlocale(LC_ALL, "portuguese");
+	op();
 	return null;
 }
