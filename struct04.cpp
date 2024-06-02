@@ -60,8 +60,6 @@ void CadastrarProduto()
 	std::cin >> nome1;
 	std::cout << "Digite o tipo do produto:" << std::endl;
 	std::cin >> tip1;
-	std::cout << "Digite o tipo do produto:" << std::endl;
-	std::cin >> tip1;
 	std::cout << "Digite o ID do produto:" << std::endl;
 	std::cin >> id1;
 	std::cout << "Digite o estoque do produto:" << std::endl;
@@ -73,19 +71,21 @@ int main(int null)
 {
 	setlocale(LC_ALL, "portuguese");
 	int opt = op();
-	switch (opt)
+	int out = 0;
+	while (out != -1)
 	{
-	case 1:
+		switch (opt)
 		{
-			CadastrarProduto();
-		}
-	case 2:
-		{
-			mostrarProdutos();
-		}
-	default:
-		break;
-	}
+			case 1:
+					CadastrarProduto();
+			case 2:
+					mostrarProdutos();
+			case -1:
+					out = -1;
+			default:
 
+				break;
+		}
+	}
 	return null;
 }
