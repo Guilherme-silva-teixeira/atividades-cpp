@@ -24,11 +24,14 @@ struct Produtos
 	int estq;
 };
 
-void op()
+int op()
 {
 	setlocale(LC_ALL, "portuguese");
 	std::cout << "Digite a opção necessária: \n\n 1 - Cadastrar produto\n\n 2 - mostrar produtos\n\n 3 - Pesquisar e editar o produto" << std::endl;
 	std::cout << "opção: " << std::endl;
+	int op;
+	std::cin >> op;
+	return op;
 }
 
 void CadastrarProduto()
@@ -47,11 +50,24 @@ void CadastrarProduto()
 	std::cin >> tip1;
 	std::cout << "Digite o ID do produto:" << std::endl;
 	std::cin >> id1;
+	std::cout << "Digite o estoque do produto:" << std::endl;
+	std::cin >> estq1;
+	std::cout << "Processo finalizado!" << std::endl;
 }
 
 int main(int null)
 {
 	setlocale(LC_ALL, "portuguese");
-	op();
+	int opt = op();
+	switch (opt)
+	{
+	case 1:
+		{
+			CadastrarProduto();
+		}
+	default:
+		break;
+	}
+
 	return null;
 }
