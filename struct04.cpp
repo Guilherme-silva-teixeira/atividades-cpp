@@ -41,7 +41,11 @@ void mostrarProdutos()
 	string t = lista.tipo;
 	int i = lista.id;
 	int e = lista.estq;
-	std::cout << "\nProduto: " << std::endl;
+	std::cout << "\n=======  Produto:  =======" << std::endl;
+	std::cout << "Nome:    " << n << std::endl;
+	std::cout << "Tipo:    " << t << std::endl;
+	std::cout << "ID:      " << i << std::endl;
+	std::cout << "Estoque: " << e << std::endl;
 }
 
 void CadastrarProduto()
@@ -74,6 +78,10 @@ int main(int null)
 	case 1:
 		{
 			CadastrarProduto();
+		}
+	case 2:
+		{
+			mostrarProdutos();
 		}
 	default:
 		break;
