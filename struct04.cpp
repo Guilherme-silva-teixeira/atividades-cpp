@@ -34,6 +34,16 @@ int op()
 	return op;
 }
 
+void mostrarProdutos()
+{
+	struct Produtos lista;
+	string n = lista.nome;
+	string t = lista.tipo;
+	int i = lista.id;
+	int e = lista.estq;
+	std::cout << "\nProduto: " << std::endl;
+}
+
 void CadastrarProduto()
 {
 	struct Produtos lista;
