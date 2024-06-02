@@ -50,11 +50,11 @@ void mostrarProdutos()
 
 void CadastrarProduto()
 {
-	struct Produtos lista;
-	string nome1 = lista.nome;
-	string tip1 = lista.tipo;
-	int id1 = lista.id;
-	int estq1 = lista.estq;
+	Produtos lista;
+	string nome1;
+	string tip1;
+	int id1;
+	int estq1;
 	setlocale(LC_ALL, "portuguese");
 	std::cout << "Digite o nome do produto:" << std::endl;
 	std::cin >> nome1;
@@ -65,6 +65,10 @@ void CadastrarProduto()
 	std::cout << "Digite o estoque do produto:" << std::endl;
 	std::cin >> estq1;
 	std::cout << "Processo finalizado!" << std::endl;
+	nome1 = lista.nome;
+	tip1 = lista.tipo;
+	id1 = lista.id;
+	estq1 = lista.estq;
 }
 
 int main(int null)
