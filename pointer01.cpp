@@ -14,6 +14,14 @@ void mostrar()
 
 int main(int null)
 {
+	setlocale(LC_ALL, "portuguese");
+	string variavel = "variável do tipo String";
+	string* pv;
+	pv = &variavel;
+	std::cout << variavel << std::endl;
+	std::cout << "Sua alocação de memória é de: " << pv << std::endl;
+	*pv = "String trocada";
+	std::cout << "\n\n" << variavel << " \n" << *pv;
 	mostrar();
 	return null;
 }
