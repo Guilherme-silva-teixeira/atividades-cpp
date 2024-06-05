@@ -6,9 +6,9 @@ using namespace std;
 
 void mostrar()
 {
-	int* pn;
-	int num = 0;
-	pn = &num;//endereço começa em 1000
+	int* pn;//sem endereço
+	int num = 0;//variável
+	pn = &num;//endereço começa em 1000, pega o endereço da variável
 	std::cout << pn << std::endl;//imprime o endereço na memória
 }
 
