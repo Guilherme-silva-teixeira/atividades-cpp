@@ -9,22 +9,18 @@ void aula37()
 	int* p;
 	int vetor[10];
 	p = &vetor[0];
-	//dar elementos a variável
 	for (int i = 0; i < 10; i++)
 	{
 		vetor[i] = i;
+		std::cout << "\nVetor: " << vetor[i] << std::endl;
+		p = &vetor[i];
+		std::cout << "\nSua alocação: " << p << std::endl;
+		//adicionar um valor ao array
+		//mostrar o valor]
+		//alocar seu endereço ao ponteiro
+		//mostrar a alocação
+		//armazenar e fazer tudo denovo
 	}
-	//mostrar o valor dos vetores
-	for (int i = 0; i < 10; i++)
-	{
-		std::cout << vetor[i] << std::endl;
-	}
-	//mostrar a posição do vetor
-	for (int i = 0; i < 10; i++)
-	{
-		std::cout << *p;
-	}
-	std::cout << "Endereço de memória: " << p << std::endl;
 }
 
 void mostrar()
